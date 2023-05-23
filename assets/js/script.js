@@ -30,10 +30,20 @@ var questions = [
   var currentQuestion = 0;
   var score = 0;
   
+  var startScreen = document.getElementById("start-screen");
+  var startButton = document.getElementById("start-button");
+  var quizScreen = document.getElementById("quiz-screen");
   var questionElement = document.getElementById("question");
   var choicesElement = document.getElementById("choices");
-  var submitButton = document.getElementById("submit");
   var resultElement = document.getElementById("result");
+
+  startButton.addEventListener("click", startQuiz);
+
+  function startQuiz(){
+    startScreen.style.display = "none";
+    quizScreen.style.display = "block";
+    displayQuestion();
+  }
   
   function displayQuestion() {
     var question = questions[currentQuestion];
@@ -77,4 +87,4 @@ var questions = [
     resultElement.textContent = "";
   }
   
-  displayQuestion();
+//   displayQuestion();
