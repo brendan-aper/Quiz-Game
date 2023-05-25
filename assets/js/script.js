@@ -164,7 +164,7 @@ function endQuiz() {
       timerDisplayEl.style.display = "none";
     });
   
-    highscoresLink.href = "/assets/html/highscores.html";
+    highscoresLink.href = "./assets/html/highscores.html";
   
     optionsDiv.appendChild(returnButton);
     optionsDiv.appendChild(highscoresLink);
