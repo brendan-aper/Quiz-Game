@@ -1,3 +1,101 @@
 #timer {
     display: none;
 }
+
+/* CSS for index.html */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #start-screen {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  #start-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #quiz-screen {
+    display: none;
+    margin-top: 50px;
+  }
+  
+  #question {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #choices {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #choices button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  #choices button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #timer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+
+/* CSS for highscore table */
+#highscore-table {
+    width: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  #highscore-table th,
+  #highscore-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #highscore-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  #highscore-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #highscore-list tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  
+  
